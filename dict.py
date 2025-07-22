@@ -11,6 +11,21 @@ studentsList = [
 # print(len(studentsList))   
 #2 - How many students are there in each class?
 
+# countA =0
+# countB =0
+# countC =0
+# for key in studentsList:
+#     if key['class']=='A':
+#         countA+=1
+#     if key["class"]=='B':
+#         countB+=1
+#     if key["class"] == 'C':
+#         countC+=1
+# print('class A has:',countA)
+# print('class B has:',countB)
+# print('class C has:',countC)
+
+
 # count={}
 # for key in studentsList:
 #     if key['class'] in count:
@@ -20,6 +35,16 @@ studentsList = [
 # print(count)
 
 #3 - How many students are there in each gender?
+
+# countMale=0
+# countFemale=0
+# for key in studentsList:
+#     if key['gender']=='male':
+#         countMale+=1
+#     if key["gender"]=='female':
+#         countFemale+=1
+# print('Female:',countFemale)
+# print('Male:',countMale)
 
 # count={}
 # for key in studentsList:
@@ -31,16 +56,37 @@ studentsList = [
 
 #4 - How many students are there in each class and gender?
 
-result = {}
-for student in studentsList:
-    cls = student["class"]
-    gender = student["gender"]
-    if cls not in result:
-        result[cls] = {"male": 0, "female": 0}
-    result[cls][gender] += 1
-print(result)
+
+countMale=0
+countFemale=0
+for key in studentsList:
+    if key['gender']=='male':
+        if key['class']=='A':
+            countMale+=1 
+        elif key['class']=='B':
+            
+    else:
+
+    
+
+print('Female class A:',countFemale)
+print('Male class B:',countMale)
+
+
+
+
+       
+# result = {}
+# for student in studentsList:
+#     cls = student["class"]
+#     gender = student["gender"]
+#     if cls not in result:
+#         result[cls] = {"male": 0, "female": 0}
+#     result[cls][gender] += 1
+# print(result)
 
 #5 - Which class has the most students?
+
 #6 - Which class has oldest students?
 #7 - Which class has youngest student?
 
